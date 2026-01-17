@@ -15,6 +15,7 @@ export default function MissionControl() {
     { title: "Syntax Surge", subtitle: "Speed Drills", icon: <Zap className="w-5 h-5 text-[var(--accent-cyan)]" />, href: "/zero-resistance", color: "border-[var(--accent-cyan)]" },
     { title: "Bug Bounty", subtitle: "Debug Code", icon: <Bug className="w-5 h-5 text-[var(--accent-green)]" />, href: "/mistakes", color: "border-[var(--accent-green)]" },
     { title: "Skill Tree", subtitle: "Unlock Nodes", icon: <BrainCircuit className="w-5 h-5 text-[var(--accent-purple)]" />, href: "/thinking-shift", color: "border-[var(--accent-purple)]" },
+    { title: "Practice Arena", subtitle: "Solve Problems", icon: <Terminal className="w-5 h-5 text-blue-400" />, href: "/practice", color: "border-blue-400" },
   ];
 
   // Identity Logic
