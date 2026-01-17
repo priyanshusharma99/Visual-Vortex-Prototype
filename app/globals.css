@@ -1,26 +1,32 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  /* Cyber/Dev Theme - Dark & Neon */
+  --bg-primary: #0F172A; /* Slate-900 */
+  --bg-secondary: #1E293B; /* Slate-800 */
+  --text-primary: #F8FAFC; /* Slate-50 */
+  --text-secondary: #94A3B8; /* Slate-400 */
+  
+  /* Accents */
+  --accent-cyan: #22D3EE; /* Cyan-400 */
+  --accent-green: #34D399; /* Emerald-400 */
+  --accent-purple: #A78BFA; /* Violet-400 */
+  --accent-pink: #F472B6; /* Pink-400 */
+  
+  --code-bg: #020617; /* Slate-950 */
+  
+  --font-geist-sans: "Inter", system-ui, sans-serif;
+  --font-geist-mono: "Fira Code", monospace; 
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
 }
