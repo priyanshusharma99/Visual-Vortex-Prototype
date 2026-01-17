@@ -9,6 +9,8 @@
   /* Cyber/Dev Theme - Dark & Neon */
   --bg-primary: #0F172A; /* Slate-900 */
   --bg-secondary: #1E293B; /* Slate-800 */
+  --bg-aurora: radial-gradient(circle at top center, #1e293b 0%, #0f172a 60%, #020617 100%);
+  
   --text-primary: #F8FAFC; /* Slate-50 */
   --text-secondary: #94A3B8; /* Slate-400 */
   
@@ -25,8 +27,18 @@
 }
 
 body {
-  background-color: var(--bg-primary);
+  background: var(--bg-aurora);
+  background-attachment: fixed;
   color: var(--text-primary);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(0.95); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s infinite ease-in-out;
 }
